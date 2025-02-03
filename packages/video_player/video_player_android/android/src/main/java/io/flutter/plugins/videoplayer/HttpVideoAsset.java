@@ -89,7 +89,7 @@ final class HttpVideoAsset extends VideoAsset {
       @NonNull DefaultHttpDataSource.Factory factory,
       @NonNull Map<String, String> httpHeaders,
       @Nullable String userAgent) {
-    factory.setUserAgent(userAgent).setAllowCrossProtocolRedirects(true);
+    factory.setUserAgent(userAgent);
     if (!httpHeaders.isEmpty()) {
       factory.setDefaultRequestProperties(httpHeaders);
     }
